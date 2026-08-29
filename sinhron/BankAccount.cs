@@ -1,8 +1,5 @@
 namespace Sinhron;
 
-/// <summary>
-/// Банківський рахунок із потокобезпечними операціями.
-/// </summary>
 internal sealed class BankAccount
 {
     private readonly object _balanceLock = new();

@@ -35,7 +35,6 @@ var generatorThread = new Thread(() =>
 
     WriteLine("Потік-генератор: усі числа згенеровано. Подію встановлено.");
 
-    // Після Set усі потоки, які викликали Wait, можуть продовжити роботу.
     generationCompleted.Set();
 })
 {
@@ -75,13 +74,11 @@ var averageThread = new Thread(() =>
     Name = "Average analyzer"
 };
 
-// Спочатку запускаємо потоки аналізу: кожен з них зупиниться на Wait().
 maximumThread.Start();
 minimumThread.Start();
 averageThread.Start();
 generatorThread.Start();
 
-// Головний потік очікує завершення всіх створених потоків.
 generatorThread.Join();
 maximumThread.Join();
 minimumThread.Join();

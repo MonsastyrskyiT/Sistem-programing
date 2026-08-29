@@ -8,12 +8,12 @@ void Print(string message)
 {
     lock (consoleLock)
     {
-        Console.WriteLine(message);
+        Console.Write(message + Environment.NewLine);
     }
 }
 
 RunBankAccountTask();
-Console.WriteLine();
+Console.Write(Environment.NewLine);
 RunSemaphoreTask();
 
 void RunBankAccountTask()
