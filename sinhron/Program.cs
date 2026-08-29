@@ -8,12 +8,12 @@ void Print(string message)
 {
     lock (consoleLock)
     {
-        Console.Write(message + Environment.NewLine);
+        Console.WriteLine(message);
     }
 }
 
 RunBankAccountTask();
-Console.Write(Environment.NewLine);
+Console.WriteLine();
 RunSemaphoreTask();
 
 void RunBankAccountTask()
@@ -23,8 +23,7 @@ void RunBankAccountTask()
     var account = new BankAccount(1000m);
     var workers = new Thread[workersCount];
 
-    Print("========== Завдання 1: BankAccount і lock ==========");
-    Print($"Початковий баланс: {account.Balance:F2} грн");
+    Consol.WriteLine($"Початковий баланс: {account.Balance:F2} грн");
 
     for (int workerNumber = 1; workerNumber <= workers.Length; workerNumber++)
     {
@@ -69,19 +68,18 @@ void RunSemaphoreTask()
     using var semaphore = new SemaphoreSlim(3, 3);
     var threads = new Thread[threadsCount];
 
-    Print("========== Завдання 2: не більше трьох потоків ==========");
 
     for (int threadNumber = 1; threadNumber <= threads.Length; threadNumber++)
     {
         int capturedNumber = threadNumber;
         threads[threadNumber - 1] = new Thread(() =>
         {
-            Print($"Потік №{capturedNumber} [ID {Environment.CurrentManagedThreadId}] став у чергу.");
+            Consol.WriteLine($"Потік №{capturedNumber} [ID {Environment.CurrentManagedThreadId}] став у чергу.");
             semaphore.Wait();
 
             try
             {
-                Print($"Потік №{capturedNumber} [ID {Environment.CurrentManagedThreadId}] почав роботу.");
+                Consol.WriteLine($"Потік №{capturedNumber} [ID {Environment.CurrentManagedThreadId}] почав роботу.");
 
                 var randomNumbers = new int[numbersPerThread];
                 for (int i = 0; i < randomNumbers.Length; i++)
@@ -90,13 +88,13 @@ void RunSemaphoreTask()
                     Thread.Sleep(Random.Shared.Next(20, 61));
                 }
 
-                Print($"Потік №{capturedNumber} [ID {Environment.CurrentManagedThreadId}]: " +
+                Consol.WriteLine($"Потік №{capturedNumber} [ID {Environment.CurrentManagedThreadId}]: " +
                       string.Join(", ", randomNumbers));
-                Print($"Потік №{capturedNumber} завершив роботу.");
+                Consol.WriteLine($"Потік №{capturedNumber} завершив роботу.");
             }
             finally
             {
-                // Звільняємо місце для наступного потоку з черги.
+                
                 semaphore.Release();
             }
         })
@@ -108,5 +106,5 @@ void RunSemaphoreTask()
     foreach (Thread thread in threads) thread.Start();
     foreach (Thread thread in threads) thread.Join();
 
-    Print("Усі десять потоків завершили роботу.");
+    Consol.WriteLine("Усі десять потоків завершили роботу.");
 }
