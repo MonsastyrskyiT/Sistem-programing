@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryLibrary", "GeometryLibrary\GeometryLibrary.csproj", "{3F57E2B2-8252-4E04-A9D0-47985DA5E09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextLibrary", "TextLibrary\TextLibrary.csproj", "{F959759B-0D15-48F9-BE34-231354EC4BC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactValidationLibrary", "ContactValidationLibrary\ContactValidationLibrary.csproj", "{D485789C-85D4-47E5-8DA1-A669C518F5D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllHomeworkDemo", "DllHomeworkDemo\DllHomeworkDemo.csproj", "{850C9367-E9C1-462D-88CA-98D970820FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F57E2B2-8252-4E04-A9D0-47985DA5E09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F57E2B2-8252-4E04-A9D0-47985DA5E09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F57E2B2-8252-4E04-A9D0-47985DA5E09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F57E2B2-8252-4E04-A9D0-47985DA5E09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F959759B-0D15-48F9-BE34-231354EC4BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F959759B-0D15-48F9-BE34-231354EC4BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F959759B-0D15-48F9-BE34-231354EC4BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F959759B-0D15-48F9-BE34-231354EC4BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D485789C-85D4-47E5-8DA1-A669C518F5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D485789C-85D4-47E5-8DA1-A669C518F5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D485789C-85D4-47E5-8DA1-A669C518F5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D485789C-85D4-47E5-8DA1-A669C518F5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850C9367-E9C1-462D-88CA-98D970820FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850C9367-E9C1-462D-88CA-98D970820FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850C9367-E9C1-462D-88CA-98D970820FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850C9367-E9C1-462D-88CA-98D970820FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
