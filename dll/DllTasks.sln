@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoLibrary", "InfoLibrary\InfoLibrary.csproj", "{5575177A-A439-422C-8A1E-9013F1093955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibrary", "MathLibrary\MathLibrary.csproj", "{093A8198-70A0-42C5-86E5-A87A3DB1C8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionLibrary", "FractionLibrary\FractionLibrary.csproj", "{9D0D7DD1-2614-4C3E-9C20-35EB1003EA3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllDemo", "DllDemo\DllDemo.csproj", "{166E4C33-44F4-482D-96BA-FB3C36A1E9A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5575177A-A439-422C-8A1E-9013F1093955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5575177A-A439-422C-8A1E-9013F1093955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5575177A-A439-422C-8A1E-9013F1093955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5575177A-A439-422C-8A1E-9013F1093955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093A8198-70A0-42C5-86E5-A87A3DB1C8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093A8198-70A0-42C5-86E5-A87A3DB1C8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093A8198-70A0-42C5-86E5-A87A3DB1C8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093A8198-70A0-42C5-86E5-A87A3DB1C8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D0D7DD1-2614-4C3E-9C20-35EB1003EA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D0D7DD1-2614-4C3E-9C20-35EB1003EA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D0D7DD1-2614-4C3E-9C20-35EB1003EA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D0D7DD1-2614-4C3E-9C20-35EB1003EA3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166E4C33-44F4-482D-96BA-FB3C36A1E9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166E4C33-44F4-482D-96BA-FB3C36A1E9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166E4C33-44F4-482D-96BA-FB3C36A1E9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166E4C33-44F4-482D-96BA-FB3C36A1E9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
