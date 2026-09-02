@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationProtocol", "NotificationProtocol\NotificationProtocol.csproj", "{D544B4C4-C864-4F02-8997-42486E47434C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationServer", "NotificationServer\NotificationServer.csproj", "{53D09D95-3B49-4942-9ED1-E837164E42A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationClient", "NotificationClient\NotificationClient.csproj", "{7414D7F2-A63F-46C9-B3A8-C6EF6D7C6D67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D544B4C4-C864-4F02-8997-42486E47434C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D544B4C4-C864-4F02-8997-42486E47434C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D544B4C4-C864-4F02-8997-42486E47434C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D544B4C4-C864-4F02-8997-42486E47434C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D09D95-3B49-4942-9ED1-E837164E42A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D09D95-3B49-4942-9ED1-E837164E42A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D09D95-3B49-4942-9ED1-E837164E42A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D09D95-3B49-4942-9ED1-E837164E42A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7414D7F2-A63F-46C9-B3A8-C6EF6D7C6D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7414D7F2-A63F-46C9-B3A8-C6EF6D7C6D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7414D7F2-A63F-46C9-B3A8-C6EF6D7C6D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7414D7F2-A63F-46C9-B3A8-C6EF6D7C6D67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
